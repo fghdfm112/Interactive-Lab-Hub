@@ -83,9 +83,16 @@ Device’s goal: translate occupancy into an intuitive light signal, keeping eve
 
 \*\***Include pictures of your storyboards here**\*\*
 
+Storyboard 1, 2, and 3
 ![Storyboard 1+2+3](storyboard1+2+3.png)
+
+Storyboard 4 and 5
 ![Storyboard 4+5](storyboard4+5.png)
+
+Storyboard 6 and 7
 [Storyboard 6+7](storyboard6+7.pdf)
+
+Storyboard 8
 ![Storyboard 8](storyboard8.png)
 
 

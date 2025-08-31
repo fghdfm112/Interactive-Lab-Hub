@@ -85,7 +85,7 @@ Device’s goal: translate occupancy into an intuitive light signal, keeping eve
 
 ![Storyboard 1+2+3](storyboard1+2+3.png)
 ![Storyboard 4+5](storyboard4+5.png)
-![Storyboard 6+7](storyboard6+7.pdf)
+[Storyboard 6+7](storyboard6+7.pdf)
 ![Storyboard 8](storyboard8.png)
 
 
@@ -138,18 +138,18 @@ Think about the setting of the device: is the environment a place where the devi
 \*\***Include sketches of what your devices might look like here.**\*\*
 
 Prototype #1:
-![Sketch Prototype#1](prototype#1.png)
-![Prototype](prototype.png)
+![Sketch Prototype#1](prototype%231.png)
+![Prototype](pic%231.jpg)
 
 
 Prototype #2:
-![Sketch Prototype#2](prototype#2.png)
-![Prototype](prototype.png)
+![Sketch Prototype#2](prototype%232.png)
+![Prototype](pic%232.jpg)
 
 
 Prototype #3:
-![Sketch Prototype#3](prototype#3.pdf)
-![Prototype](prototype.png)
+![Sketch Prototype#3](prototype%233.pdf)
+![Prototype](pic%233.jpg)
 
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*

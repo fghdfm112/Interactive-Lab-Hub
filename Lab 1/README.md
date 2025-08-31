@@ -3,17 +3,9 @@
 # Staging Interaction
 
 \*\***NAME OF COLLABORATOR HERE**\*\*
-
+COLLABORATOR: Xuesi Chen, Akash Basu, Sean Lewis, Benthan Vu
 
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
-
-There is no actor that plays Tinkerbell--her existence in the play comes from the interactions that the other characters have with her.
-
-For lab this week, we draw on this and other inspirations from theatre to stage interactions with a device where the main mode of display/output for the interactive device you are designing is lighting. You will plot the interaction with a storyboard, and use your computer and a smartphone to experiment with what the interactions will look and feel like. 
-
-_Make sure you read all the instructions and understand the whole of the laboratory activity before starting!_
-
-
 
 ## Prep
 
@@ -61,27 +53,49 @@ Labs are due on Mondays. Make sure this page is linked to on your main class hub
 
 ## Part A. Plan 
 
-To stage an interaction with your interactive device, think about:
-
-_Setting:_ Where is this interaction happening? (e.g., a jungle, the kitchen) When is it happening?
-
-_Players:_ Who is involved in the interaction? Who else is there? If you reflect on the design of current day interactive devices like the Amazon Alexa, it’s clear they didn’t take into account people who had roommates, or the presence of children. Think through all the people who are in the setting.
-
-_Activity:_ What is happening between the actors?
-
-_Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening the fridge). 
-
-The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
-
 \*\***Describe your setting, players, activity and goals here.**\*\*
 
-Storyboards are a tool for visually exploring a users interaction with a device. They are a fast and cheap method to understand user flow, and iterate on a design before attempting to build on it. Take some time to read through this explanation of [storyboarding in UX design](https://www.smashingmagazine.com/2017/10/storyboarding-ux-design/). Sketch seven storyboards of the interactions you are planning. **It does not need to be perfect**, but must get across the behavior of the interactive device and the other characters in the scene. 
+### Setting: 
+
+The interaction takes place in a lively club environment. The “device” is imagined as part of the club’s lighting system, projecting colors onto a wall or ceiling to signal crowd activity. The time is during an event night when people are actively entering and leaving the space.
+
+### Players:
+
+Club guests who enter and exit the venue.
+
+The interactive device (light system) that responds to the number of people inside.
+
+### Activity:
+
+As people enter or leave the club, the device flashes or changes colors to communicate the change in occupancy. The light system doesn’t just track individual events (entry/exit), but also communicates the current “state” of the crowd with color-coded signals:
+
+Entry → white flash
+Exit → black flash
+Occupancy thresholds → black, green, yellow, red, or multicolor strobe.
+Wave Hnad → light brightness/color saturation change.
+
+### Goals:
+
+Guests’ goal: enjoy the experience, understand crowd energy at a glance.
+
+Device’s goal: translate occupancy into an intuitive light signal, keeping everyone aware of the club’s vibe.
+
 
 \*\***Include pictures of your storyboards here**\*\*
+
+![Storyboard 1+2+3](storyboard1+2+3.png)
+![Storyboard 4+5](storyboard4+5.png)
+![Storyboard 6+7](storyboard6+7.pdf)
+![Storyboard 8](storyboard8.png)
+
 
 Present your ideas to the other people in your breakout room (or in small groups). You can just get feedback from one another or you can work together on the other parts of the lab.
 
 \*\***Summarize feedback you got here.**\*\*
+
+1. The flashing for entry/exit events could be distracting if too frequent; maybe consider smoother transitions or subtler effects.
+
+2. Add more spatial features—for example, if people move to a corner of the room, the corresponding light could become brighter to indicate where the crowd is clustering.
 
 
 ## Part B. Act out the Interaction
@@ -90,18 +104,16 @@ Try physically acting out the interaction you planned. For now, you can just pre
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
 
+1. On paper, the rapid flashes for entry/exit events seemed like a fun and clear signal. But when acted out, the flashes felt a bit too distracting and harsh, especially in quick succession. Similarly, the strobe effect at high occupancy looked more overwhelming than energizing in practice—it risked drawing attention away from the actual interaction.
+
 \*\***Are there new ideas that occur to you or your collaborator that come up from the acting?**\*\*
 
+1. Instead of sharp flashes, we could use gentler fades or pulsing lights for entry/exit to make the signals less disruptive.
+
+2. We thought about adding spatial responsiveness, where the lights brighten in the direction or corner of the room that people move toward, giving more context than just occupancy counts.
 
 ## Part C. Prototype the device
 
-You will be using your smartphone as a stand-in for the device you are prototyping. You will use the browser of your smart phone to act as a “light” and use a remote control interface to remotely change the light on that device. 
-
-Code for the "Tinkerbelle" tool, and instructions for setting up the server and your phone are [here](https://github.com/IRL-CT/tinkerbelle).
-
-We invented this tool for this lab! 
-
-If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
 
@@ -116,6 +128,7 @@ Now, change the goal within the same setting, and update the interaction with th
 \*\***Show the follow-up work here.**\*\*
 
 
+
 ## Part E. Costume the device
 
 Only now should you start worrying about what the device should look like. Develop three costumes so that you can use your phone as this device.
@@ -124,15 +137,38 @@ Think about the setting of the device: is the environment a place where the devi
 
 \*\***Include sketches of what your devices might look like here.**\*\*
 
+Prototype #1:
+![Sketch Prototype#1](prototype#1.png)
+![Prototype](prototype.png)
+
+
+Prototype #2:
+![Sketch Prototype#2](prototype#2.png)
+![Prototype](prototype.png)
+
+
+Prototype #3:
+![Sketch Prototype#3](prototype#3.pdf)
+![Prototype](prototype.png)
+
+
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
 
+### Concerns:
+The interaction setting requires strong, noticeable lighting. This means the device either needs to achieve higher brightness levels or we may need to use multiple phones as light sources to ensure visibility in a larger or darker environment.
+
+### Opportunitities 
+The reliance on light opens up creative opportunities for expressive visual effects (color shifts, strobes, gradients) that can enhance the atmosphere. The device can also be scaled by adding more phones or light sources, turning a simple prototype into a flexible system for clubs, bedrooms, or events where light-based cues make the experience more engaging.
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
 
+https://drive.google.com/file/d/1pbtOFvbayS1YrIoZbZ7TKoyE5s4KkZQP/view?usp=drive_link
+
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
-Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
+
+COLLABORATOR: Xuesi Chen, Akash Basu, Sean Lewis, Benthan Vu
 
 
 

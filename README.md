@@ -6,7 +6,7 @@ student number: hf363
 
 Please place links here to the README.md's for each of your labs here:
 
-[Lab 1. Staging Interaction](lab%201/README.md)
+[Lab 1. Staging Interaction](Lab%201/README.md)
 
 Lab 2. Interactive Prototyping: The Clock of Pi
 

@@ -3,7 +3,7 @@
 # Staging Interaction
 
 \*\***NAME OF COLLABORATOR HERE**\*\*
-COLLABORATOR: Xuesi Chen, Akash Basu, Sean Lewis, Benthan Vu
+COLLABORATOR: Xuesi Chen, Akash Basu, Sean Lewis, Benthan Vu, Carrie
 
 In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
 
@@ -130,9 +130,13 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
+https://drive.google.com/file/d/1OGsV-xff_btzmd9VnCM2GJbxCDKisLvy/view?usp=drive_link
+
 Now, change the goal within the same setting, and update the interaction with the paper prototype. 
 
 \*\***Show the follow-up work here.**\*\*
+
+https://drive.google.com/file/d/1biyKgNr6A_fNrD2bDSle_5IQODWIaXHP/view?usp=drive_link
 
 
 
@@ -175,7 +179,7 @@ https://drive.google.com/file/d/1pbtOFvbayS1YrIoZbZ7TKoyE5s4KkZQP/view?usp=drive
 
 \*\***Please indicate who you collaborated with on this Lab.**\*\*
 
-COLLABORATOR: Xuesi Chen, Akash Basu, Sean Lewis, Benthan Vu
+COLLABORATOR: Xuesi Chen, Akash Basu, Sean Lewis, Benthan Vu, Carrie
 
 
 

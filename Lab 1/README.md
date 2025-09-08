@@ -290,6 +290,12 @@ Storyboard 6-7
 
 
 ### Prototyped Interaction
+(Alternative view link)
+
+1. [ACTION 1](https://drive.google.com/file/d/1ixK5HoelEK1lvuXNfHtoU6PuvDhMgiSP/view?usp=sharing)
+2. [ACTION 2](https://drive.google.com/file/d/1KwihyxTxlGhPBfyzUaTahOYVApT817xH/view?usp=sharing)
+3. [ACTION 3](https://drive.google.com/file/d/1BghewnDmWzQIDUJziRsD6goIfd1RNvze/view?usp=sharing)
+
 - [lab1_2_1.mp4](lab1_2/lab1_2_1.mp4)
 - [lab1_2_2.mp4](lab1_2/lab1_2_2.mp4)
 - [lab1_2_3.mp4](lab1_2/lab1_2_3.mp4)

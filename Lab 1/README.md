@@ -199,6 +199,10 @@ This describes the second week's work for this lab activity.
 You will be assigned three partners from other groups. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear. 
 
 \*\***Summarize feedback from your partners here.**\*\*
+Advise 1: The device would have more use case
+Solution: We deploy the decive into other environment like park to increase utility.
+Advice 2: There could be more costumes
+Solution: we add more prototypes 
 
 ## Make it your own
 
@@ -208,3 +212,100 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+### Setting
+
+The device is deployed in public spaces such as parks, playgrounds, or open squares. The environment is dynamic, with people entering and leaving, children playing, and community interactions occurring. Phones are integrated into the infrastructure, serving as both sensors (detecting movement, sound, and density) and light sources (communicating conditions through screen-based illumination).
+
+### Players
+
+Children and Families: Kids play in the park while parents or guardians supervise them.
+
+General Visitors: People walking, resting, or exercising in the park.
+
+Community Monitors/Authorities: Park staff, security, or even AI-assisted monitoring systems that interpret phone sensor data.
+
+The Device: Acts as both a detector and a signaling system, translating real-time situations into visual light cues.
+
+### Activities
+
+#### Safety Monitoring
+
+Detects when an unattended child leaves the park, triggering a red flashing signal.
+
+Identifies potential fights through audio/motion sensors, again flashing red.
+
+#### Entrance & Movement Tracking
+
+Flashes briefly when someone enters the park, confirming detection.
+
+#### Population Awareness
+
+Adjusts light signals according to how crowded the park is:
+
+Black: < 5 people
+
+Green: 5–10
+
+Yellow: 11–15
+
+Red: 16–20
+
+Rainbow: > 20
+
+#### Community Feedback Loop
+
+Provides real-time visual feedback for visitors about the current condition of the park.
+
+Reinforces both safety awareness and capacity management.
+
+### Goals
+
+Safety: Prevent children from leaving unattended and detect dangerous events like fights quickly.
+
+Awareness: Give park-goers an intuitive signal of how many people are present, reducing overcrowding risks.
+
+Engagement: Create a sense of shared community responsibility by making safety and occupancy data visible to everyone.
+
+Scalability: Show how simple tools (phones, lights, sensors) can be deployed across multiple public spaces with minimal infrastructure cost.
+
+
+### Concerns 
+
+1. Using phones as sensors raises privacy concerns (e.g., detecting children, fights, or crowd size). Parents and visitors may worry about constant monitoring.
+
+2. Fight detection via sound/motion could confuse loud play, cheering, or sports activities as aggression.
+
+3. Park visitors may resist the idea if they feel “watched” or if flashing lights feel intrusive.
+   
+### Opportunitities
+1. Provides real-time visual alerts for emergencies (child leaving unattended, fights).
+2. Can tie into broader smart city platforms for crowd management, safety, and urban planning.
+
+### Storyboards:
+Storyboard 1 -5
+- ![st1_5](lab1_2/st1_5.png)
+Storyboard 6-7
+- ![st6_7](lab1_2/st6_7.png)
+
+
+### Prototyped Interaction
+- [lab1_2_1.mp4](lab1_2/lab1_2_1.mp4)
+- [lab1_2_2.mp4](lab1_2/lab1_2_2.mp4)
+- [lab1_2_3.mp4](lab1_2/lab1_2_3.mp4)
+
+
+### Sketch of the prototypes
+- ![lab1_2_p11](lab1_2/lab1_2_p11.jpg)
+- ![lab1_2_p12](lab1_2/lab1_2_p12.jpg)
+- ![lab1_2_p2](lab1_2/lab1_2_p2.jpg)
+- ![lab1_2_p3](lab1_2/lab1_2_p3.png)
+- ![lab1_2_s4](lab1_2/lab1_2_s4.jpg)
+
+### Pictures for built prototypes
+- ![lab1_2_s1](lab1_2/lab1_2_s1.png)
+- ![lab1_2_s2](lab1_2/lab1_2_s2.jpg)
+- ![lab1_2_s3](lab1_2/lab1_2_s3.png)
+- ![lab1_2_s4](lab1_2/lab1_2_s4.png)
+
+

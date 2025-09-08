@@ -295,14 +295,14 @@ Storyboard 6-7
 - [lab1_2_3.mp4](lab1_2/lab1_2_3.mp4)
 
 
-### Sketch of the prototypes
+### Pictures for built prototypes
 - ![lab1_2_p11](lab1_2/lab1_2_p11.jpg)
 - ![lab1_2_p12](lab1_2/lab1_2_p12.jpg)
 - ![lab1_2_p2](lab1_2/lab1_2_p2.jpg)
 - ![lab1_2_p3](lab1_2/lab1_2_p3.png)
 - ![lab1_2_s4](lab1_2/lab1_2_p4.jpg)
 
-### Pictures for built prototypes
+### Sketch of the prototypes
 - ![lab1_2_s1](lab1_2/lab1_2_s1.png)
 - ![lab1_2_s2](lab1_2/lab1_2_s2.jpg)
 - ![lab1_2_s3](lab1_2/lab1_2_s3.png)

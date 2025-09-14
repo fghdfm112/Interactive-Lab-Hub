@@ -63,9 +63,14 @@ backlight.value = True
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=400)
+    # Get the current time string
+    current_time = time.strftime("%m/%d/%Y %H:%M:%S")
 
-    #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
-
+    # Draw the time in the middle of the screen
+    text_x = 10
+    text_y = height // 2 - 10  # vertical centering
+    draw.text((text_x, text_y), current_time, font=font, fill="#FFFFFF")
+    
     # Display image.
     disp.image(image, rotation)
     time.sleep(1)

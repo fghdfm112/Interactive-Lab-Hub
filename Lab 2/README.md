@@ -226,6 +226,8 @@ The code is at [vague_clock.py](./vague_clock.py)
 
 \*\*\***Take a video of your PiClock.**\*\*\*
 
+https://drive.google.com/file/d/1pSA_fWOCHE3M8YAze-4T9F-0zNp2P4sB/view?usp=sharing
+
 After you edit and work on the scripts for Lab 2, the files should be upload back to your own GitHub repo! You can push to your personal github repo by adding the files here, commiting and pushing.
 
 ```

@@ -191,6 +191,10 @@ Pro Tip: Using tools like [code-server](https://coder.com/docs/code-server/lates
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
 
+** I want to design a decorative clock that emphasizes a softer, less precise sense of time—something for people who already rely on their phones for exact hours, but still enjoy a clock as an ambient object. The first model uses color to fill the background according to the time of day: soft yellow or orange in the morning, bright sky blue in the afternoon, and deep purple at night, creating a calm mood rather than a strict countdown. The second model replaces numbers with words that reflect daily rhythms and milestones, such as “Since getting up,” “Towards lunch,” “Past lunch,” “Till the end of work,” and so on, with default times coded (e.g., wake at 9:00 am, lunch at 1:00 pm, end of day at 6:00 pm, dinner at 7:30 pm, bed at midnight). On its screen, the clock dynamically displays how long it has been since the last event and how much time remains until the next, offering a poetic and relatable flow of time.**
+
+![Lab 2 Prototype](./lab2proto.png)
+
 
 # Prep for Part 2
 
@@ -215,11 +219,14 @@ Please sketch/diagram your clock idea. (Try using a [Verplank diagram](https://c
 
 \*\*\***A copy of your code should be in your Lab 2 Github repo.**\*\*\*
 
+The code is at [vague_clock.py](./vague_clock.py)
 
 ## Assignment that was formerly Part F. 
 ## Make a short video of your modified barebones PiClock
 
 \*\*\***Take a video of your PiClock.**\*\*\*
+
+https://drive.google.com/file/d/1pSA_fWOCHE3M8YAze-4T9F-0zNp2P4sB/view?usp=sharing
 
 After you edit and work on the scripts for Lab 2, the files should be upload back to your own GitHub repo! You can push to your personal github repo by adding the files here, commiting and pushing.
 

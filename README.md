@@ -1,11 +1,16 @@
-# [Your name here]'s-Lab-Hub
+# Evan(Haodong) Fang's-Lab-Hub
 for [Interactive Device Design](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/)
+
+email: hf363@cornell.edu
+student number: hf363
 
 Please place links here to the README.md's for each of your labs here:
 
-[Lab 1. Staging Interaction](Lab%201/)
+[Lab 1. Staging Interaction](Lab%201/README.md)
+
 
 [Lab 2. Interactive Prototyping: The Clock of Pi](Lab%202/)
+
 
 [Lab 3. Chatterboxes](Lab%203/)
 

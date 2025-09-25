@@ -8,9 +8,11 @@ Please place links here to the README.md's for each of your labs here:
 
 [Lab 1. Staging Interaction](Lab%201/README.md)
 
-[Lab 2. Interactive Prototyping: The Clock of Pi](Lab%202/README.md)
 
-Lab 3. Chatterboxes
+[Lab 2. Interactive Prototyping: The Clock of Pi](Lab%202/)
+
+
+[Lab 3. Chatterboxes](Lab%203/)
 
 Lab 4. Ph-UI!!!
 

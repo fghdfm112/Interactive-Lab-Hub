@@ -1,0 +1,1 @@
+echo "Good day Evan. I am glad to see you again." | festival --tts

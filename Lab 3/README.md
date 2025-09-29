@@ -82,6 +82,10 @@ You can also play audio files directly with `aplay filename`. Try typing `aplay 
 \*\***Write your own shell file to use your favorite of these TTS engines to have your Pi greet you by name.**\*\*
 (This shell file should be saved to your own repo for this lab.)
 
+[This is the shell file](speech-scripts/greetevan.sh)
+It could greet me. 
+
+
 ---
 Bonus:
 [Piper](https://github.com/rhasspy/piper) is another fast neural based text to speech package for raspberry pi which can be installed easily through python with:
@@ -146,6 +150,12 @@ and
 python faster_whisper_try.py
 ```
 \*\***Write your own shell file that verbally asks for a numerical based input (such as a phone number, zipcode, number of pets, etc) and records the answer the respondent provides.**\*\*
+
+[This is the shell file](speech-scripts/havenumber.sh)
+[This is the pythom program I write for the shell](speech-scripts/listen_once.py)
+[This is the output txt file for recorded number](speech-scripts/voice_result.txt)
+
+In my shell file, I created a simple voice interaction system. First, the computer speaks out loud using Festival to ask the user for a number. Then it runs a Python program that listens through the microphone and uses speech recognition to capture what the user says. The spoken answer is saved into a text file called voice_result.txt, which acts like a notebook where the computer records the response. Finally, the computer speaks again to confirm that the answer was successfully recorded. This way, the script combines text-to-speech, speech-to-text, and file saving into one flow that lets the computer ask a question, listen to the reply, and store the result.
 
 ### 🤖 NEW: AI-Powered Conversations with Ollama
 
@@ -238,9 +248,32 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 
 \*\***Post your storyboard and diagram here.**\*\*
 
+I want to turn my Raspberry Pi into an interactive word-guessing game device. The Pi will randomly select a word and, with the help of Ollama AI, generate descriptive hints for me to guess it. If I guess correctly, the device will congratulate me and ask if I’d like to play again, restarting the game with a new word. If my guess is wrong, it will provide additional descriptions to guide me closer to the answer until I succeed. This creates a fun, replayable, AI-powered guessing game experience directly on the Pi.
+
+![Storyboard](lab3sb.png)
+![Verplank diagram](lab3vd.png)
+
+
 Write out what you imagine the dialogue to be. Use cards, post-its, or whatever method helps you develop alternatives or group responses. 
 
 \*\***Please describe and document your process.**\*\*
+
+*Start:*
+
+Pi: "Welcome to the Word Guessing Game! I’m thinking of a word. Want to play?"
+You: "Yes."
+Pi: "Great! Here’s your first clue: It’s something that shines in the sky during the day."
+
+*Correct Guess*
+
+You: "The Sun."
+Pi: "Correct! Congratulations! Run again if you want to play more."
+
+*Wrong*
+
+You: "A lamp?"
+Pi: "Not quite! Here’s another clue: This object cannot fit in your pocket."
+
 
 ### Acting out the dialogue
 
@@ -248,10 +281,18 @@ Find a partner, and *without sharing the script with your partner* try out the d
 
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
 
+https://drive.google.com/file/d/1dBaWNTfSdA33EF9Ixb4xbGO_IqPZ9_zW/view?usp=sharing
+
+
+The general idea is the same. The wording is slightly different, could be explained by random in "AI". It seems to work.
+
+
+
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
 
 \*\***Describe if the dialogue seemed different than what you imagined, or when acted out, when it was wizarded, and how.**\*\*
+
 
 # Lab 3 Part 2
 

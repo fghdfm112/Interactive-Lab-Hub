@@ -151,8 +151,16 @@ python faster_whisper_try.py
 ```
 \*\***Write your own shell file that verbally asks for a numerical based input (such as a phone number, zipcode, number of pets, etc) and records the answer the respondent provides.**\*\*
 
+<br>
+
 [This is the shell file](speech-scripts/havenumber.sh)
+
+<br>
+
 [This is the pythom program I write for the shell](speech-scripts/listen_once.py)
+
+<br>
+
 [This is the output txt file for recorded number](speech-scripts/voice_result.txt)
 
 In my shell file, I created a simple voice interaction system. First, the computer speaks out loud using Festival to ask the user for a number. Then it runs a Python program that listens through the microphone and uses speech recognition to capture what the user says. The spoken answer is saved into a text file called voice_result.txt, which acts like a notebook where the computer records the response. Finally, the computer speaks again to confirm that the answer was successfully recorded. This way, the script combines text-to-speech, speech-to-text, and file saving into one flow that lets the computer ask a question, listen to the reply, and store the result.
@@ -224,6 +232,13 @@ answer = ask_ai("How should I greet users?")
 
 \*\***Try creating a simple voice interaction that combines speech recognition, Ollama processing, and text-to-speech output. Document what you built and how users responded to it.**\*\*
 
+<br>
+<br>
+The Python script generates a weather by calling ollama model as answer, and the shell script captures this output and pipes it into festival --tts, allowing the report to be spoken aloud.
+
+[This is the shell File](ollama/weather.sh)
+[This is the python file]("ollama/weather.py)\
+
 ### Serving Pages
 
 In Lab 1, we served a webpage with flask. In this lab, you may find it useful to serve a webpage for the controller on a remote device. Here is a simple example of a webserver.
@@ -251,6 +266,7 @@ Storyboard and/or use a Verplank diagram to design a speech-enabled device. (Stu
 I want to turn my Raspberry Pi into an interactive word-guessing game device. The Pi will randomly select a word and, with the help of Ollama AI, generate descriptive hints for me to guess it. If I guess correctly, the device will congratulate me and ask if I’d like to play again, restarting the game with a new word. If my guess is wrong, it will provide additional descriptions to guide me closer to the answer until I succeed. This creates a fun, replayable, AI-powered guessing game experience directly on the Pi.
 
 ![Storyboard](lab3sb.png)
+
 ![Verplank diagram](lab3vd.png)
 
 

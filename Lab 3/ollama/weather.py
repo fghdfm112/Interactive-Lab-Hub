@@ -9,3 +9,4 @@ def ask_ai(question):
 
 # Use it anywhere!
 answer = ask_ai("What is the weather in New York City?")
+print(answer)

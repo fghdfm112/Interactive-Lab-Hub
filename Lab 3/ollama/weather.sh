@@ -3,3 +3,4 @@ echo "I can tell you the weather in New York City. Please say yes if you want to
 answer=$(python3 weather.py)
 
 echo "$answer" | festival --tts
+

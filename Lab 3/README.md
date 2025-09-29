@@ -237,7 +237,10 @@ answer = ask_ai("How should I greet users?")
 The Python script generates a weather by calling ollama model as answer, and the shell script captures this output and pipes it into festival --tts, allowing the report to be spoken aloud.
 
 [This is the shell File](ollama/weather.sh)
-[This is the python file]("ollama/weather.py)\
+
+<br>
+
+[This is the python file]("ollama/weather.py)
 
 ### Serving Pages
 
@@ -309,6 +312,7 @@ In the [demo directory](./demo), you will find an example Wizard of Oz project. 
 
 \*\***Describe if the dialogue seemed different than what you imagined, or when acted out, when it was wizarded, and how.**\*\*
 
+I am unable to run the app even I installed the old python version for the required packages.
 
 # Lab 3 Part 2
 

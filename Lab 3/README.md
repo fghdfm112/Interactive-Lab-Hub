@@ -359,6 +359,48 @@ The system should:
 
 *Include videos or screencaptures of both the system and the controller.*
 
+## Voice-Controlled Word Guessing Game
+
+
+### Overview
+
+This is an interactive voice-controlled word guessing game that uses AI (Ollama) for word generation and hint creation, combined with speech recognition for voice input. The game is entirely hands-free and uses text-to-speech for feedback.
+
+### How It Works
+
+#### Game Start 🎯
+The system welcomes you with speech: "Hi, Welcome to this game. I have randomly selected a word for you to guess."
+An AI (Ollama qwen2.5:0.5b-instruct model) generates a random simple word (like animals, objects, or food: cat, apple, book, etc.)
+
+#### Guessing Loop
+Your Turn: The system says "You can guess the word now."
+Voice Input: You speak your guess, which is captured by the speech recognition system (Vosk)
+Checking: Your guess is compared directly to the correct answer
+
+#### Feedback
+If Correct: "You guessed the word correctly." - Game ends!
+If Wrong :
+"That's not correct."
+"Here is the hint: [AI-generated hint]"
+The hint is a short description (6 words or less) like "furry pet that meows" for "cat"
+Loop continues - you get another chance to guess
+
+<br>
+<br>
+
+[game.sh](ollama/game.sh) : Main orchestrator (bash script)
+
+[game_pre.py](ollama/game_pre.py): AI word generator
+[game.py](ollama/game.py): Guess checker and hint generator
+[listen_guess.py](ollama/listen_guess.py): Voice recognition system
+
+
+video link:
+
+**System Video:** [Watch here](https://drive.google.com/file/d/1VALFop_H4dMS8cWsFw_9u1Q5ZzCcjFV7/view?usp=sharing)  
+**Controller Video:** [Watch here](https://drive.google.com/file/d/1FBT1nKhc2a29Z6FMLhxq0PQgAQ8xNSV_/view?usp=sharing)
+
+
 <details>
   <summary><strong>Submission Cleanup Reminder (Click to Expand)</strong></summary>
   
@@ -379,20 +421,25 @@ Answer the following:
 ### What worked well about the system and what didn't?
 \*\**your answer here*\*\*
 
+The system successfully managed the overall game flow — generating random words, giving spoken instructions through Festival TTS, and responding with appropriate hints or confirmations. Its structure of linking Python logic with a shell loop made the interactions smooth and modular. However, the timing between TTS responses and user input occasionally felt delayed, and the system sometimes repeated prompts if voice recognition lagged or misinterpreted results. Improving synchronization and adding error-handling for unexpected audio input would make it more seamless.
+
 ### What worked well about the controller and what didn't?
 
 \*\**your answer here*\*\*
+
+The controller performed well in capturing and transcribing voice input using Vosk and sounddevice. It provided a natural way for users to interact hands-free, enhancing engagement compared to text-based guessing. However, it struggled with background noise and pronunciation variations, occasionally leading to incorrect guesses being sent to the system. Adding noise suppression, input confirmation, or simple keyword feedback could make the controller more reliable and responsive.
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
 \*\**your answer here*\*\*
 
+Future versions should incorporate contextual understanding and more flexible dialogue management so the system feels conversational rather than procedural.
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
 \*\**your answer here*\*\*
 
-
+This system could generate a dataset of user speech, transcriptions, guessing patterns, and system responses, useful for studying human speech behavior in interactive guessing games. By logging voice input, guessed words, response times, and system decisions, we could analyze engagement and accuracy trends. Adding sensing modalities like facial expression recognition, microphone amplitude for emotion detection, or gesture sensors could capture richer interaction cues to improve future multimodal learning and system adaptability.
 
 
 

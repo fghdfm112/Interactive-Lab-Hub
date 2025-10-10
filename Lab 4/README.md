@@ -255,7 +255,48 @@ Usually, sensors need to be positioned in specific locations or orientations to 
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
 
+#### Countdown Timer
+Rotate to set minutes/seconds, press to start/pause, and hold to reset. The display/LEDs show remaining time and an alert triggers at zero. Put in box to work as a clock. 
+
+#### Room RGB Color Picker
+Turn to sweep through hues (HSV), press to lock the color, and hold to save a preset. LED strips update in real time so you see the color as you dial. Embed in the wall to make it a panel.
+
+#### Racing Game Controller
+Rotation maps to steering input with fine control, while press acts as a quick action (e.g., nitro/horn). Hold can toggle driving assists or camera views. Make it looks like a console.
+
+#### CNightstand Dial-Light
+The encoder itself glows; rotate to dim/brighten and press to toggle on/off. It would looks like a lamp.
+
+#### AI Conciseness Level Controller
+Turn to choose verbosity from “bullet-point terse” to “deep-dive detailed.” Press applies the setting for the next response; hold restores your default style. Embed in the wall to make it a panel for home AI.
+
+
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+
+#### Countdown Timer
+
+* Does the press/hold mapping ever cause accidental resets? What’s a safe hold duration?
+* Is the display/buzzer readable/audible from typical distance/noise levels?
+* What I need: box for apperance, speaker
+
+#### Room RGB Color Picker
+Turn to sweep through hues (HSV), press to lock the color, and hold to save a preset. LED strips update in real time so you see the color as you dial. Embed in the wall to make it a panel.
+
+* Do users prefer discrete hue stops or smooth continuous sweep?
+* How many presets are memorable/retrievable with only press/hold?
+* What I need: What I need: box for apperance so it could looks like a control panel; wire connected with home light, or smart light.
+
+#### Racing Game Controller
+* What steering curve works best (linear vs exponential), and how much deadband feels stable?
+* Is input latency noticeable when bridged to the game (USB HID vs serial→middleware)?
+
+
+#### CNightstand Dial-Light
+The encoder itself glows; rotate to dim/brighten and press to toggle on/off. It would looks like a lamp.
+
+#### AI Conciseness Level Controller
+Turn to choose verbosity from “bullet-point terse” to “deep-dive detailed.” Press applies the setting for the next response; hold restores your default style. Embed in the wall to make it a panel for home AI.
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
 

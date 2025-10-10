@@ -340,6 +340,7 @@ Turn to choose verbosity from “bullet-point terse” to “deep-dive detailed.
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+
 #### Countdown Timer
 
 * Does the press/hold mapping ever cause accidental resets? What’s a safe hold duration?
@@ -372,6 +373,7 @@ Turn to sweep through hues (HSV), press to lock the color, and hold to save a pr
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
 
+<img src="img/proto_device.jpg" width="300">
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
@@ -419,16 +421,39 @@ Think about how you want to present the information about what your sensor is se
 
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
+<img src="img/21.png" width="300">
+
+<img src="img/22.png" width="300">
+
+<img src="img/23.png" width="300">
+
+<img src="img/24.png" width="300">
+
+<img src="img/25.png" width="300">
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+It’s hard to secure the rotary encoder — it’s either fixed too tightly to the holder or ends up too loose and flexible.
+I also need to leave multiple holes for potential additional sensors or USB plug-in devices, so I have to design the enclosure to be flexible or include extra openings.
+
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
+
+I chose Design 3
 
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
 
 Build a cardboard prototype of your design.
 
+I chose Design 3 because it’s easier to slide in and out, simple to assemble, and offers room for future refinement. I used transparent PVC material for the shell, which not only protects the components but also allows the internal lighting to be visible, enhancing the interactive effect.
+At this stage, the device is intended to remain fixed in one place—functioning like a switch that changes the room’s color once connected to the lighting system. Currently, the screen color serves as a demo of the light output. Compared with other devices, this design represents color changes more intuitively through the encoder’s built-in LED, making it easier and more engaging to use.
+In future iterations, the design could integrate wireless control or adaptive brightness based on ambient light, turning it from a static controller into a responsive smart lighting interface.
+
 
 **\*\*\*Document your rough prototype.\*\*\***
+
+<img src="img/display.jpg" width="300">
+
+<img src="img/shell.jpg" width="300">
 
 
 # LAB PART 2

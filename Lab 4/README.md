@@ -57,6 +57,7 @@
 ## Lab Overview
 **NAMES OF COLLABORATORS HERE**
 
+<details>
 
 For lab this week, we focus both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
 
@@ -112,6 +113,7 @@ For submission, the readme.md page for this lab should be edited to include the 
 * Link your Lab 4 readme.md in your main Interactive-Lab-Hub readme.md. 
 * Labs are due on Mondays, make sure to submit your Lab 4 readme.md to Canvas.
 
+</details>
 
 ## Lab Overview
 
@@ -130,6 +132,7 @@ F) [Record the interaction](#part-f)
 
 ## The Report (Part 1: A-D, Part 2: E-F)
 
+<details>
 ### Quick Start: Python Environment Setup
 
 1. **Create and activate a virtual environment in Lab 4:**
@@ -147,9 +150,14 @@ F) [Record the interaction](#part-f)
 	python blinkatest.py
 	```
 	If you see "Hello blinka!", your setup is correct. If not, follow the troubleshooting steps in the file or ask for help.
+</details>
 
 ### Part A
 ### Capacitive Sensing, a.k.a. Human-Twizzler Interaction 
+
+<details>
+
+| ![twi_t](img/twi_t.jpg) | ![twi](img/twi.jpg) |
 
 We want to introduce you to the [capacitive sensor](https://learn.adafruit.com/adafruit-mpr121-gator) in your kit. It's one of the most flexible input devices we are able to provide. At boot, it measures the capacitance on each of the 12 contacts. Whenever that capacitance changes, it considers it a user touch. You can attach any conductive material. In your kit, you have copper tape that will work well, but don't limit yourself! In the example below, we use Twizzlers--you should pick your own objects.
 
@@ -168,6 +176,9 @@ These Twizzlers are connected to pads 6 and 10. When you run the code and touch 
 Twizzler 10 touched!
 Twizzler 6 touched!
 ```
+
+</details>
+
 
 ### Part B
 ### More sensors
@@ -290,13 +301,19 @@ Turn to sweep through hues (HSV), press to lock the color, and hold to save a pr
 #### Racing Game Controller
 * What steering curve works best (linear vs exponential), and how much deadband feels stable?
 * Is input latency noticeable when bridged to the game (USB HID vs serial→middleware)?
+* What I need: What I need: box for apperance, preferable a console plastic box, a ps5/switch, 
 
 
 #### CNightstand Dial-Light
-The encoder itself glows; rotate to dim/brighten and press to toggle on/off. It would looks like a lamp.
+* What dimming curve matches human perception (linear vs gamma)? 
+* Is a long-press to shift CCT (warm/cool) discoverable without labels?
+* does an illuminated knob/enclosure get warm or create hotspots?
+* What I need: base for placing the pi; tube for cables, lamp cover
 
 #### AI Conciseness Level Controller
-Turn to choose verbosity from “bullet-point terse” to “deep-dive detailed.” Press applies the setting for the next response; hold restores your default style. Embed in the wall to make it a panel for home AI.
+* How many levels are meaningful (e.g., 3, 5, 7) before it feels confusing?
+* What on-device feedback best communicates the current level (icons, LEDs, text)?
+* What I need: Speaker for communication, screen, cardboard
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
 

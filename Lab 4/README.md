@@ -155,9 +155,14 @@ F) [Record the interaction](#part-f)
 ### Part A
 ### Capacitive Sensing, a.k.a. Human-Twizzler Interaction 
 
+[code](cap_test.py)
+
+<img src="img/twi.jpg" width="300">
+<img src="img/twi_t.jpg" width="300">
+
 <details>
 
-| ![twi_t](img/twi_t.jpg) | ![twi](img/twi.jpg) |
+
 
 We want to introduce you to the [capacitive sensor](https://learn.adafruit.com/adafruit-mpr121-gator) in your kit. It's one of the most flexible input devices we are able to provide. At boot, it measures the capacitance on each of the 12 contacts. Whenever that capacitance changes, it considers it a user touch. You can attach any conductive material. In your kit, you have copper tape that will work well, but don't limit yourself! In the example below, we use Twizzlers--you should pick your own objects.
 
@@ -185,6 +190,18 @@ Twizzler 6 touched!
 
 #### Light/Proximity/Gesture sensor (APDS-9960)
 
+[code](color_test.py)
+[code](gesture_test.py)
+[code](color_test.py)
+
+
+<img src="img/comb_t1.jpg" width="300">
+<img src="img/comb_t2.jpg" width="300">
+<img src="img/comb_t3.jpg" width="300">
+<img src="img/comb.jpg" width="300">
+
+
+<details>
 We here want you to get to know this awesome sensor [Adafruit APDS-9960](https://www.adafruit.com/product/3595). It is capable of sensing proximity, light (also RGB), and gesture! 
  
 <img src="https://cdn-shop.adafruit.com/970x728/3595-06.jpg" width=200>
@@ -202,9 +219,16 @@ Connect it to your pi with Qwiic connector and try running the three example scr
 ```
 
 You can go the the [Adafruit GitHub Page](https://github.com/adafruit/Adafruit_CircuitPython_APDS9960) to see more examples for this sensor!
+</details>
 
 #### Rotary Encoder 
 
+[Code](encoder_test.py)
+
+<img src="img/ro.jpg" width="300">
+<img src="img/ro_t.jpg" width="300">
+
+<details>
 A rotary encoder is an electro-mechanical device that converts the angular position to analog or digital output signals. The [Adafruit rotary encoder](https://www.adafruit.com/product/4991#technical-details) we ordered for you came with separate breakout board and encoder itself, that is, they will need to be soldered if you have not yet done so! We will be bringing the soldering station to the lab class for you to use, also, you can go to the MakerLAB to do the soldering off-class. Here is some [guidance on soldering](https://learn.adafruit.com/adafruit-guide-excellent-soldering/preparation) from Adafruit. When you first solder, get someone who has done it before (ideally in the MakerLAB environment). It is a good idea to review this material beforehand so you know what to look at.
 
 <p float="left">
@@ -222,9 +246,17 @@ Connect it to your pi with Qwiic connector and try running the example script, i
 
 You can go to the [Adafruit Learn Page](https://learn.adafruit.com/adafruit-i2c-qt-rotary-encoder/python-circuitpython) to learn more about the sensor! The sensor actually comes with an LED (neo pixel): Can you try lighting it up? 
 
+</details>
+
+
 #### Joystick 
 
+[Code](joystick_test.py)
 
+<img src="img/jo.jpg" width="300">
+<img src="img/jo_t.jpg" width="300">
+
+<details>
 A [joystick](https://www.sparkfun.com/products/15168) can be used to sense and report the input of the stick for it pivoting angle or direction. It also comes with a button input!
 
 <p float="left">
@@ -239,9 +271,16 @@ Connect it to your pi with Qwiic connector and try running the example script to
 
 You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Joystick_Py) to learn more about the sensor!
 
+</details>
+
 #### Distance Sensor
 
+[Code](qwiic_distance.py)
 
+<img src="img/di.jpg" width="300">
+<img src="img/di_t.jpg" width="300">
+
+<details>
 Earlier we have asked you to play with the proximity sensor, which is able to sense objects within a short distance. Here, we offer [Sparkfun Proximity Sensor Breakout](https://www.sparkfun.com/products/15177), With the ability to detect objects up to 20cm away.
 
 <p float="left">
@@ -257,29 +296,45 @@ Connect it to your pi with Qwiic connector and try running the example script to
 
 You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Proximity_Py) to learn more about the sensor and see other examples
 
+</details>
+
 ### Part C
 ### Physical considerations for sensing
 
-
+<details>
 Usually, sensors need to be positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
-
+</details>
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
 
 #### Countdown Timer
 Rotate to set minutes/seconds, press to start/pause, and hold to reset. The display/LEDs show remaining time and an alert triggers at zero. Put in box to work as a clock. 
 
+<img src="img/clocl.png" width="300">
+
+
 #### Room RGB Color Picker
 Turn to sweep through hues (HSV), press to lock the color, and hold to save a preset. LED strips update in real time so you see the color as you dial. Embed in the wall to make it a panel.
+
+<img src="img/light.png" width="300">
 
 #### Racing Game Controller
 Rotation maps to steering input with fine control, while press acts as a quick action (e.g., nitro/horn). Hold can toggle driving assists or camera views. Make it looks like a console.
 
+<img src="img/game.png" width="300">
+
+
 #### CNightstand Dial-Light
 The encoder itself glows; rotate to dim/brighten and press to toggle on/off. It would looks like a lamp.
 
+<img src="img/lamp.png" width="300">
+
+
+
 #### AI Conciseness Level Controller
 Turn to choose verbosity from “bullet-point terse” to “deep-dive detailed.” Press applies the setting for the next response; hold restores your default style. Embed in the wall to make it a panel for home AI.
+
+<img src="img/ai.png" width="300">
 
 
 
@@ -322,7 +377,7 @@ Turn to sweep through hues (HSV), press to lock the color, and hold to save a pr
 ### Physical considerations for displaying information and housing parts
 
 
-
+<details>
 Here is a Pi with a paper faceplate on it to turn it into a display interface:
 
 
@@ -359,6 +414,9 @@ Here is an example:
 
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
  
+</details>
+
+
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***

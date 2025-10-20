@@ -1,0 +1,22 @@
+# Requirements for Ollama Integration in Lab 4
+
+# Core dependencies for Ollama integration
+requests>=2.31.0
+
+# Voice assistant dependencies (vosk-based)
+vosk>=0.3.45
+sounddevice>=0.4.6
+
+# Face detection dependencies
+opencv-python>=4.5.0
+
+# System dependencies (install via apt-get):
+# - festival: Text-to-speech engine
+#   Install: sudo apt-get install -y festival
+# - portaudio19-dev: Required for sounddevice
+#   Install: sudo apt-get install -y portaudio19-dev
+# - opencv-data: Haar Cascade models for face detection
+#   Install: sudo apt-get install -y opencv-data
+
+
+

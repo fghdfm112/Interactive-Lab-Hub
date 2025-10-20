@@ -468,6 +468,7 @@ Following exploration and reflection from Part 1, complete the "looks like," "wo
 
 #### Chaining Devices and Exploring Interaction Effects
 
+<details>
 For Part 2, you will design and build a fun interactive prototype using multiple inputs and outputs. This means chaining Qwiic and STEMMA QT devices (e.g., buttons, encoders, sensors, servos, displays) and/or combining with traditional breadboard prototyping (e.g., LEDs, buzzers, etc.).
 
 **Your prototype should:**
@@ -626,14 +627,101 @@ For more details and advanced usage, see the [official SparkFun Servo pHAT docum
 A servo motor is a rotary actuator that allows for precise control of angular position. The position is set by the width of an electrical pulse (PWM). You can read [this Adafruit guide](https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/servo-motors) to learn more about how servos work.
 
 ---
-
+</details>
 
 ### Part F
 
 ### Record
 
+For part E, I decided to build a new system, here is my first thought for the multi-input/output device:
+
+##### Overview
+The proposed device is an interactive conversational AI system inspired by smart assistants like Amazon Alexa, but enhanced with physical interactivity and adjustable communication behavior. It combines audio, visual, and tactile inputs to create a more tangible and controllable AI experience. Users can engage in natural dialogue with the agent, while directly influencing its response style through the hardware interface.
+
+##### Inputs
+
+Microphone – Captures the user’s voice input for real-time speech recognition and natural language interaction.
+
+Camera – Serves as a gesture- or presence-based activation switch. When the camera detects a face or motion, it automatically “wakes” the AI agent, initiating a conversation session.
+
+Rotary Encoder – Provides a manual control interface allowing the user to adjust parameters of the AI’s behavior, primarily the level of conciseness in its responses.
+
+Button at Encoder - Strong open/close switch
+
+##### Outputs
+
+Speaker – Delivers the AI agent’s spoken responses to the user, ensuring a smooth conversational loop.
+
+LED Indicator (Integrated with Encoder) – Visually displays the current conciseness level. For example, lower brightness or a cooler color might indicate highly concise responses, while higher brightness or warmer tones signal more elaborate, detailed answers.
+
+
+##### Interaction Flow
+
+When the user approaches, the camera detects presence and activates the system.
+
+The user begins speaking naturally to the AI through the microphone.
+
+The AI processes the input and generates a spoken response through the speaker.
+
+The user can rotate the encoder to dynamically adjust how concise or detailed the AI’s replies are—like turning a “verbosity” dial.
+
+The LED ring around the encoder provides immediate feedback, changing brightness or color according to the current conciseness mode.
+
+Red indicates the most detailed mode, where the AI provides in-depth explanations and longer responses.
+
+Yellow represents a balanced mode, offering moderately detailed yet efficient answers.
+
+Green signifies the most concise mode, giving short and to-the-point replies.
+
+Button would physciaally activate the program even there is no people face in the camera. 
+
+<img src="img/app_2.png" width="300">
+<img src="img/info_2" width="300">
+
+#### Iteration 1, Camera was excluded for simplicity.
+
+task1: build AI voice assistant
+task2: add a switch 
+task3: use encoder to control the conciseness. 
+
+Here is the code I developed:
+
+| File | Purpose |
+|------|---------|
+| [`twist_control.py`](twist_control.py) | Main program - monitors encoder rotation and button press |
+| [`listen.py`](isten.py) | Captures voice input using Vosk speech recognition |
+| [`ask_ai_concise.py`](ask_ai_concise.py) | Queries Ollama AI with sentence limit based on selected level |
+| [`voice_assistant_concise.sh`](voice_assistant_concise.sh) | Shell script that orchestrates listen → ask → speak cycle |
+| [`qwiic_twist_test.py`](qwiic_twist_test.py) | Hardware test script for Qwiic Twist encoder |
+
+**Run:** `python3 twist_control.py` → Rotate encoder → Press button → Speak → AI responds
+
+
+Video for testing and running:
+
+[Video 1](https://drive.google.com/file/d/1GbiVokwAyUEN38gaMSXw9lNpqTsvovuk/view?usp=sharing)
+
+
+
+#### Iteration 2, Using camera to control the program
+| [`twist_control.py`](Lab%204/twist_control.py) | Main program - monitors encoder rotation and button press |
+| [`listen.py`](Lab%204/listen.py) | Captures voice input using Vosk speech recognition |
+| [`ask_ai_concise.py`](Lab%204/ask_ai_concise.py) | Queries Ollama AI with sentence limit based on selected level |
+| [`voice_assistant_concise.sh`](Lab%204/voice_assistant_concise.sh) | Shell script that orchestrates listen → ask → speak cycle |
+| [`qwiic_twist_test.py`](Lab%204/qwiic_twist_test.py) | Hardware test script for Qwiic Twist encoder |
+| [`VOICE_ASSISTANT_GUIDE.md`](Lab%204/VOICE_ASSISTANT_GUIDE.md) | Complete user guide with examples |
+| [`FACE_DETECTION_GUIDE.md`](Lab%204/FACE_DETECTION_GUIDE.md) | Guide for automatic face detection mode |
+
+**Run Manual Mode:** `python3 twist_control.py` → Rotate encoder → Press button → Speak → AI responds  
+**Run Auto Mode:** `python3 face_start.py` → Face detected → Voice assistant starts automatically (no button press!)  
+**Run Direct Auto:** `python3 twist_control.py --auto-start` → Voice assistant starts immediately
+
+[Video 2](https://drive.google.com/file/d/1mfS-Qahn--kV5QSLQocHAmXDW9fJlJhq/view?usp=sharing)
+[Daily Use("Acts like")](https://drive.google.com/file/d/10J63MCnwhtzd2_uMZYueXYKXjLoOIt7A/view?usp=drivesdk)
+
+<details>
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
 * "Works like": shows what the device can do
 * "Acts like": shows how a person would interact with the device
-
+</details>

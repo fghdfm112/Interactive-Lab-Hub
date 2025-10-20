@@ -676,7 +676,7 @@ Green signifies the most concise mode, giving short and to-the-point replies.
 Button would physciaally activate the program even there is no people face in the camera. 
 
 <img src="img/app_2.png" width="300">
-<img src="img/info_2" width="300">
+<img src="img/info_2.png" width="300">
 
 #### Iteration 1, Camera was excluded for simplicity.
 

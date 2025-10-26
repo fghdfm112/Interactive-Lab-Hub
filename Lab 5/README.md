@@ -2,28 +2,36 @@
 
 **NAMES OF COLLABORATORS HERE**
 
-
+<details>
 For lab this week, we focus on creating interactive systems that can detect and respond to events or stimuli in the environment of the Pi, like the Boat Detector we mentioned in lecture. 
 Your **observant device** could, for example, count items, find objects, recognize an event or continuously monitor a room.
 
 This lab will help you think through the design of observant systems, particularly corner cases that the algorithms need to be aware of.
+</details>
 
 ## Prep
 
+<details>
 1.  Install VNC on your laptop if you have not yet done so. This lab will actually require you to run script on your Pi through VNC so that you can see the video stream. Please refer to the [prep for Lab 2](https://github.com/FAR-Lab/Interactive-Lab-Hub/blob/-/Lab%202/prep.md#using-vnc-to-see-your-pi-desktop).
 2.  Install the dependencies as described in the [prep document](prep.md). 
 3.  Read about [OpenCV](https://opencv.org/about/),[Pytorch](https://pytorch.org/), [MediaPipe](https://mediapipe.dev/), and [TeachableMachines](https://teachablemachine.withgoogle.com/).
 4.  Read Belloti, et al.'s [Making Sense of Sensing Systems: Five Questions for Designers and Researchers](https://www.cc.gatech.edu/~keith/pubs/chi2002-sensing.pdf).
+</details>
 
 ### For the lab, you will need:
+
+<details>
 1. Pull the new Github Repo
 1. Raspberry Pi
 1. Webcam 
+</details>
 
 ### Deliverables for this lab are:
+<details>
 1. Show pictures, videos of the "sense-making" algorithms you tried.
 1. Show a video of how you embed one of these algorithms into your observant system.
 1. Test, characterize your interactive device. Show faults in the detection and how the system handled it.
+</details>
 
 ## Overview
 Building upon the paper-airplane metaphor (we're understanding the material of machine learning for design), here are the four sections of the lab activity:
@@ -41,8 +49,10 @@ D) [Reflect](#part-d)
 ### Part A
 ### Play with different sense-making algorithms.
 
-#### Pytorch for object recognition
 
+
+#### Pytorch for object recognition
+<details>
 For this first demo, you will be using PyTorch and running a MobileNet v2 classification model in real time (30 fps+) on the CPU. We will be following steps adapted from [this tutorial](https://pytorch.org/tutorials/intermediate/realtime_rpi.html).
 
 ![torch](Readme_files/pyt.gif)
@@ -75,12 +85,16 @@ Read the `infer.py` script and become familiar with the code. You can change the
 [PyTorch supports transfer learning](https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html), so you can fine‑tune and transfer learn models to recognize your own objects. It requires extra steps, so we won't cover it here.
 
 For more details on transfer learning and deployment to embedded devices, see Deep Learning on Embedded Systems: A Hands‑On Approach Using Jetson Nano and Raspberry Pi (Tariq M. Arif). [Chapter 10](https://onlinelibrary.wiley.com/doi/10.1002/9781394269297.ch10) covers transfer learning for object detection on desktop, and [Chapter 15](https://onlinelibrary.wiley.com/doi/10.1002/9781394269297.ch15) describes moving models to the Pi using ONNX.
+</details>
+
+<img src="img/pytorch1.jpg" width="300">
+<img src="img/pytorch2.jpg" width="300">
 
 ### Machine Vision With Other Tools
 The following sections describe tools ([MediaPipe](#mediapipe) and [Teachable Machines](#teachable-machines)).
 
 #### MediaPipe
-
+<details>
 A established open source and efficient method of extracting information from video streams comes out of Google's [MediaPipe](https://mediapipe.dev/), which offers state of the art face, face mesh, hand pose, and body pose detection.
 
 ![Media pipe](Readme_files/mp.gif)
@@ -103,9 +117,15 @@ Consider how you might use this position based approach to create an interaction
 (You might also consider how this notion of percentage control with hand tracking might be used in some of the physical UI you may have experimented with in the last lab, for instance in controlling a servo or rotary encoder.)
 
 
+</details>
+
+<img src="img/mediapipe.jpg" width="300">
+
+https://drive.google.com/file/d/1gY-68nYsAww0y_ZhbxPkDzR2POydCe75/view?usp=sharing
 
 #### Moondream Vision-Language Model
 
+<details>
 [Moondream](https://www.ollama.com/library/moondream) is a lightweight vision-language model that can understand and answer questions about images. Unlike the classification models above, Moondream can describe images in natural language and answer specific questions about what it sees.
 
 To use Moondream, first make sure Ollama is running and pull the model:
@@ -120,9 +140,18 @@ python moondream_simple.py
 
 This will capture an image from your webcam and let you ask questions about it in natural language. Note that vision-language models are slower than classification models (responses may take up to minutes on a Raspberry Pi). There are newer models like [LFM2-VL](https://huggingface.co/LiquidAI/LFM2-VL-450M-GGUF), but many are very recent and not yet optimized for embedded devices.
 
+</details>
+
+<img src="img/moondream.jpg" width="300">
+
 **Design consideration**: Think about how slower response times change your interaction design. What kinds of observant systems benefit from thoughtful, delayed responses rather than real-time classification? Consider systems that monitor over longer time periods or provide periodic summaries rather than instant feedback.
 
+Slower response times encourage designs that emphasize reflection over immediacy. Observant systems like wellness trackers, environmental monitors, or learning analytics benefit from delayed responses because they can aggregate data over time, identify meaningful patterns, and provide more thoughtful summaries or insights rather than reacting to momentary fluctuations.
+
+
 #### Teachable Machines
+
+<details>
 Google's [TeachableMachines](https://teachablemachine.withgoogle.com/train) is very useful for prototyping with the capabilities of machine learning. We are using [a python package](https://github.com/MeqdadDev/teachable-machine-lite) with tensorflow lite to simplify the deployment process.
 
 ![Tachable Machines Pi](Readme_files/tml_pi.gif)
@@ -142,9 +171,17 @@ Next train your own model. Visit [TeachableMachines](https://teachablemachine.wi
 ![Teachable Machines Browser](Readme_files/tml_browser.gif)
 ![Tensorflow Lite Download](Readme_files/tml_download-model.png)
 
+
 Include screenshots of your use of Teachable Machines, and write how you might use this to create your own classifier. Include what different affordances this method brings, compared to the OpenCV or MediaPipe options.
 
+</details>
+
+<img src="img/google_ml.jpg" width="300">
+I want to build a shelf item recognization machine to monitor the shelf item, it seems to be a very good one. 
+
 #### (Optional) Legacy audio and computer vision observation approaches
+
+<details>
 In an earlier version of this class students experimented with observing through audio cues. Find the material here:
 [Audio_optional/audio.md](Audio_optional/audio.md). 
 Teachable machines provides an audio classifier too. If you want to use audio classification this is our suggested method. 
@@ -152,17 +189,39 @@ Teachable machines provides an audio classifier too. If you want to use audio cl
 In an earlier version of this class students experimented with foundational computer vision techniques such as face and flow detection. Techniques like these can be sufficient, more performant, and allow non discrete classification. Find the material here:
 [CV_optional/cv.md](CV_optional/cv.md).
 
+</details>
+
 ### Part B
+
+<details>
+
 ### Construct a simple interaction.
 
 * Pick one of the models you have tried, and experiment with prototyping an interaction.
 * This can be as simple as the boat detector shown in lecture.
 * Try out different interaction outputs and inputs.
 
+</details>
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
+*Background Change Monitor with AI Description*
+
+A program that monitors a camera feed every 60 seconds to detect background changes. When a change is detected, it captures an image, stores it in a circular buffer (max 10 images, oldest gets replaced), and uses Moondream AI to describe what's happening in the scene. This creates an automated surveillance system that not only detects changes but provides natural language descriptions of what changed.
+
+[Code for this program: trail.py](trail.py)
+
+*Result*
+
+<img src="img/proto1.jpg" width="300">
+<img src="img/proto2.jpg" width="300">
+<img src="img/proto3.jpg" width="300">
+
+
 ### Part C
+
+<details>
+
 ### Test the interaction prototype
 
 Now flight test your interactive prototype and **note down your observations**:
@@ -172,13 +231,25 @@ For example:
 1. When it fails, why does it fail?
 1. Based on the behavior you have seen, what other scenarios could cause problems?
 
+</details>
+
+* The AI response was slow, so delay actually more than 1 minute
+* The camera cannot always know what is actually important, can only value the information by scope of the picture
+* It used to fail because of no first image (fixed)
+* Potential problem: when background becomes to vague, image becomes too large, people/object is too small to know and etc. All would leads to protential problem
+
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
 1. How bad would they be impacted by a miss classification?
 1. How could change your interactive system to address this?
 1. Are there optimizations you can try to do on your sense-making algorithm.
 
+Users should know this system has a few limits — the Moondream model runs slowly, so alerts might be delayed, and lighting changes or camera noise can cause false positives or missed detections. In security use, that’s risky — missing an intruder or getting constant false alarms hurts trust. To improve it, we could add confidence scores, adjustable sensitivity, and a quick review screen showing before-and-after images. We could also use a faster model like MobileNet or YOLO for quick checks, ignore motion from harmless areas, smooth out short changes, run AI in the background, and cache repeated scenes to speed things up.
+
 ### Part D
+
+<details>
+
 ### Characterize your own Observant system
 
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
@@ -191,7 +262,21 @@ During the lecture, we mentioned questions to help characterize a material:
 * What are other properties/behaviors of X?
 * How does X feel?
 
+</details>
+
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+* It is a camera system
+* It is good to use when there is less complex background
+* When there is a high accuracy and fast resposne needed
+* When the video pile up and the analysis time went beyond the monitorinf time
+* It is a camera system so...
+
+https://drive.google.com/file/d/1F2xrYMUWJ3PqJH2ZhMOKAzhZ7rxby4Zs/view?usp=sharing
+
+https://drive.google.com/file/d/1uXSZebbqTgTxizzv2qq23UXnDWfX4z-x/view?usp=sharing
+
+
+The analysis time is more than 1 minute intervel, making the output always behind the video.
 
 ### Part 2.
 

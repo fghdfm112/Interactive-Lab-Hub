@@ -4,3 +4,5 @@ pip-chill==1.0.3
 requests
 teachable-machine-lite==1.2.0.2
 torchvision==0.24.0
+flask
+ultralytics

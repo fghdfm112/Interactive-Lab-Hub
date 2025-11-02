@@ -1,0 +1,30 @@
+{
+  "items": [
+    "\n 1. Red box with white label (pink retro style)"
+  ],
+  "last_updated": "20251102_011818",
+  "history": [
+    {
+      "timestamp": "20251102_011818",
+      "description": "\n 1. Red box with white label (pink retro style)",
+      "image": "shelf_img/shelf_20251102_011818.jpg",
+      "structured_items": [
+        {
+          "name": "Red Box With White Label (Pink Retro Style)",
+          "quantity": 1,
+          "note": "Moondream AI",
+          "source": "moondream"
+        }
+      ]
+    }
+  ],
+  "last_description": "\n 1. Red box with white label (pink retro style)",
+  "structured_items": [
+    {
+      "name": "Red Box With White Label (Pink Retro Style)",
+      "quantity": 1,
+      "note": "Moondream AI",
+      "source": "moondream"
+    }
+  ]
+}

@@ -283,3 +283,48 @@ The analysis time is more than 1 minute intervel, making the output always behin
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
+
+## Project Description
+
+The Smart Shelf Monitor is an AI-powered inventory tracking system that automatically monitors items on a shelf using computer vision and provides real-time updates through a web dashboard. Built with Moondream AI vision-language model running locally via Ollama, the system captures images every 5 minutes (or on-demand), identifies all items present on the shelf with approximate quantities, and tracks changes over time. The system features automatic image cleanup (maintaining only the last hour of images), manual rescan capability, and stores inventory history in a structured format with an Excel-like table view on the dashboard.
+
+
+
+I forget to record my friend testing the video, so I record his suggestion in text and my improvement accordingly
+
+
+The full document for this project is stored [here](PROJECT.md)
+
+Iteration:
+
+**User Feeddback:** :
+Low accuracy in counting
+
+Iteration 1: Add the YOLO
+
+Initially, I added YOLOv8 object detection to complement Moondream AI because Moondream's natural language descriptions made it difficult to get precise item counts. While Moondream excels at identifying what objects are present, parsing exact quantities from text responses like "a few books" or "several bottles" proved unreliable. YOLO was introduced to provide accurate object detection and counting for common items (books, bottles, teddy bears, etc.) that it was pre-trained to recognize. The hybrid approach aimed to leverage YOLO's precision for counting common objects while using Moondream's comprehensive vision capabilities to identify items YOLO couldn't detect.
+
+**User Feeddback:** :
+Low accuracy in recognice the item
+
+Interation 2: Removing the YOLO, and refine the moondream package
+
+
+After testing, I removed YOLO entirely because it failed to detect many items that Moondream successfully identified on my shelf, such as Ritz Crackers, wine bottles, tissue boxes, and snack packages. YOLO is limited to 80 pre-trained object classes, which meant it would only recognize generic categories (like "bottle") while missing specific items (like "wine bottle" or "snack package"). The hybrid system added significant complexity—requiring model loading, inference, similarity mapping, and merge logic—without providing sufficient value. Moondream alone proved more comprehensive for shelf monitoring, as it could describe any visible item regardless of training data limitations. I refined the Moondream prompts to request approximate counts using natural language (e.g., "a few", "several"), which provides reasonable estimates while maintaining simplicity and broader item coverage.
+
+Iteration 3: Add the picture cap
+
+**User Feeddback:** 
+Too passive, waiting 5 minutes is too long
+
+Iteration 4: allow for rescan. 
+
+**Limitation**
+Still, low accuracy, trying to find new package to improve the accuracy. 
+
+Demo video:
+
+https://drive.google.com/file/d/1Wk98z2xpnXwMRxt-lOXut4i663M6TVIG/view?usp=drive_link
+
+
+https://drive.google.com/file/d/18Z2nwjX7r12qD66lQ8vYG1-HGVqnKGqt/view?usp=drive_link
